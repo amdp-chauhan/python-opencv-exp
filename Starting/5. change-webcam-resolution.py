@@ -14,7 +14,7 @@ while True:
     is_true, vid_frame = vid_capture.read()
     print(is_true)
     if is_true:
-        cv.imshow('web cam ;)', vid_frame)
+        cv.imshow('web cam ::', vid_frame)
         if cv.waitKey(30) & 0xFF == ord('q'):
             break
     else:

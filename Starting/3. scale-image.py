@@ -9,6 +9,6 @@ def rescale_frame(frame, scale=0.8):
     new_dim = (width, height)
     return cv.resize(frame, new_dim, interpolation=cv.INTER_AREA)
 
-cv.imshow('Imagege', rescale_frame(img, 0.5))
+cv.imshow('Image::', rescale_frame(img, 0.5))
 
 cv.waitKey(0)

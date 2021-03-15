@@ -16,7 +16,7 @@ while True:
     is_true, vid_frame = vid_capture.read()
     print(is_true)
     if is_true:
-        cv.imshow('Videoeo', rescale_frame(vid_frame, 0.5))
+        cv.imshow('Video::', rescale_frame(vid_frame, 0.5))
         if cv.waitKey(30) & 0xFF == ord('q'):
             break
     else:
